@@ -6,3 +6,8 @@ geopy
 plotly
 streamlit_folium
 folium
+pygeos
+shapely
+fiona
+rtree
+geocoder
