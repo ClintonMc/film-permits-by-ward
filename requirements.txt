@@ -2,7 +2,8 @@ streamlit
 pandas
 geopandas
 datetime
-urllib
+urllib.parse
+urllib.error
 geopy
 plotly
 streamlit_folium
