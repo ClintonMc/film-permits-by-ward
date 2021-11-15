@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import geopandas as gpd
 import datetime
-import urllib.parse, urllib.error
+import urllib
 from geopy.geocoders import Nominatim
 import plotly.graph_objects as go
 from streamlit_folium import folium_static
