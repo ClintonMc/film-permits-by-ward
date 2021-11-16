@@ -59,6 +59,7 @@ permit_wards = wards[['ward','Permit Count']].copy()
 permit_wards['ward'] = permit_wards['ward'].astype(int)
 permit_wards['Permit Count'] = permit_wards['Permit Count'].astype(int)
 permit_wards = permit_wards.sort_values('ward')
+permit_wards = permit_wards.rename(columns={'ward':'Ward'})
 output_csv = permit_wards.to_csv(index=False)
 
 fig = go.Figure(data=[go.Table(
