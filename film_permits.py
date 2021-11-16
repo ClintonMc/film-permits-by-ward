@@ -66,7 +66,7 @@ fig = go.Figure(data=[go.Table(
     header=dict(values=['Ward','Number of Permits Issued'],
                 fill_color='paleturquoise',
                 align='center'),
-    cells=dict(values=[permit_wards['ward'],permit_wards['Permit Count']],
+    cells=dict(values=[permit_wards['Ward'],permit_wards['Permit Count']],
                fill_color='lavender',
                align='center'))
     ])
