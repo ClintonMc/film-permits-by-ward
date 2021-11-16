@@ -37,6 +37,7 @@ def get_data(start,end):
     return film_permits
 
 perm_data = get_data(sd,ed)
+perm_data = perm_data.drop_duplicates(subset=['APPLICATIONNUMBER'])
 
 gdf_permits = gpd.GeoDataFrame(perm_data,geometry=gpd.points_from_xy(perm_data.LONGITUDE,perm_data.LATITUDE))
 
