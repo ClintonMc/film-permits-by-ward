@@ -45,7 +45,7 @@ wards = gpd.read_file(geojson_file)
 
 gdf_permits = gdf_permits.set_crs(epsg=4326)
 
-sjoined_permits = gdf_permits.sjoin(wards,how="inner",predicate='within')
+sjoined_permits = gdf_permits.sjoin(wards,how="inner",predicate='intersects')
 
 grouped_permits = sjoined_permits.groupby("ward").size()
 df = grouped_permits.to_frame().reset_index()
